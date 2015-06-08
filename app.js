@@ -26,7 +26,7 @@ $(document).ready(function(){
 			
 			function openBrowser(link){ 
          
-                var ref = cordova.InAppBrowser.open(link, '_blank', 'location=yes');
+                var ref = cordova.InAppBrowser.open('link', '_blank', 'location=yes');
             }  
 			
 			

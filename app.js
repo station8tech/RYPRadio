@@ -32,7 +32,7 @@ $(document).ready(function(){
 function openBrowser(link){ 
 				
          console.log(link);
-               // var ref = cordova.InAppBrowser.open('link', '_blank', 'location=yes');
-               window.open(link);
+                var ref = cordova.InAppBrowser.open('http://www.google.com', '_blank', 'location=yes');
+            
             } 
 	

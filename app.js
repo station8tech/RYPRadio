@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
 	
+		window.open = cordova.InAppBrowser.open;
 		
 	
 			

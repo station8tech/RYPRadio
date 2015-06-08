@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 	
-		window.open = cordova.InAppBrowser.open;
+		
 		
 	
 			
@@ -15,7 +15,7 @@ $(document).ready(function(){
 			$.each(json, function(key, value){  
 				
 				
-				listHtml += "<li><a href'#' onclick='openBrowser(\"" +  value.link + "\");'><img class='ui-circle ui-mini ui-padding' src='"+ value.image +"'><h2>" + value.name +  "</h2><p><strong>"+ value.title + "</strong></p><p><strong>" + value.date +"</strong></p></li>";
+				listHtml += "<li><a href'#' onclick='cordova.InAppBrowser.open(\"" +  value.link + "\");'><img class='ui-circle ui-mini ui-padding' src='"+ value.image +"'><h2>" + value.name +  "</h2><p><strong>"+ value.title + "</strong></p><p><strong>" + value.date +"</strong></p></li>";
 				});//end each
 			
 			

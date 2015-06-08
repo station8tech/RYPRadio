@@ -15,7 +15,7 @@ $(document).ready(function(){
 			$.each(json, function(key, value){  
 				
 				
-				listHtml += "<li><a href'#' onclick='cordova.InAppBrowser.open(\"" +  value.link + "\");'><img class='ui-circle ui-mini ui-padding' src='"+ value.image +"'><h2>" + value.name +  "</h2><p><strong>"+ value.title + "</strong></p><p><strong>" + value.date +"</strong></p></li>";
+				listHtml += "<li><a href'#' onclick='openBrowser(\"" +  value.link + "\");'><img class='ui-circle ui-mini ui-padding' src='"+ value.image +"'><h2>" + value.name +  "</h2><p><strong>"+ value.title + "</strong></p><p><strong>" + value.date +"</strong></p></li>";
 				});//end each
 			
 			
@@ -32,8 +32,10 @@ $(document).ready(function(){
 
 function openBrowser(link){ 
 				
-         console.log(link);
-                var ref = cordova.InAppBrowser.open('http://www.google.com', '_blank', 'location=yes');
+        cb = window.plugins.childBrowser;
+                
+                
+                cb.showWebPage(link); 
             
             } 
 	

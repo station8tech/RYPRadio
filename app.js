@@ -33,7 +33,7 @@ $(document).ready(function(){
 function openBrowser(link){ 
 				
         cb = window.plugins.childBrowser;
-                
+                console.log(link);
                 
                 cb.showWebPage(link); 
             

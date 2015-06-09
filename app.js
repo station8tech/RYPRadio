@@ -15,9 +15,9 @@ $(document).ready(function(){
 			$.each(json, function(key, value){  
 				
 				
-				//listHtml += "<li><a href='#' onclick=window.open('http://www.google.com','_blank','location=yes,toolbar=yes')><img class='ui-circle ui-mini ui-padding' src='"+ value.image +"'><h2>" + value.name +  "</h2><p><strong>"+ value.title + "</strong></p><p><strong>" + value.date +"</strong></p></li>";
+				listHtml += "<li><a href='#' onclick=window.open('http://www.google.com','_blank','location=yes,toolbar=yes')><img class='ui-circle ui-mini ui-padding' src='"+ value.image +"'><h2>" + value.name +  "</h2><p><strong>"+ value.title + "</strong></p><p><strong>" + value.date +"</strong></p></li>";
 				
-				listHtml += "<li><a href='#' onclick=window.plugins.ChildBrowser.showWebPage('http://www.google.com')><img class='ui-circle ui-mini ui-padding' src='"+ value.image +"'><h2>" + value.name +  "</h2><p><strong>"+ value.title + "</strong></p><p><strong>" + value.date +"</strong></p></li>";
+				//listHtml += "<li><a href='#' onclick=window.plugins.ChildBrowser.showWebPage('http://www.google.com')><img class='ui-circle ui-mini ui-padding' src='"+ value.image +"'><h2>" + value.name +  "</h2><p><strong>"+ value.title + "</strong></p><p><strong>" + value.date +"</strong></p></li>";
 				
 					//listHtml += "<li><a href='#' onclick='window.open(\"" +  value.link + "\");'><img class='ui-circle ui-mini ui-padding' src='"+ value.image +"'><h2>" + value.name +  "</h2><p><strong>"+ value.title + "</strong></p><p><strong>" + value.date +"</strong></p></li>";
 					

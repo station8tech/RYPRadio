@@ -13,7 +13,24 @@
 
 
 <body>
-   
+      <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '115034762164852',
+          xfbml      : true,
+          version    : 'v2.3'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
    
     
     </div>
@@ -22,7 +39,7 @@
        <h1>RYP Radio</h1>
          </div>
         
-         <ul data-role="listview" data-inset="false" data-theme="a" id="history"></ul>
+         <ul data-role="listview" data-split-icon="gear" data-split-theme="a" data-inset="false" data-theme="a" id="history"></ul>
     </div>
     
   

@@ -20,7 +20,7 @@ $(document).ready(function(){
 				
 			//this work for media	listHtml += "<li><a href='#' onclick=window.plugins.streamingMedia.playAudio('" + value.link + "')><img class='ui-circle ui-mini ui-padding' src='"+ value.image +"'><h2>" + value.name +  "</h2><p><strong>"+ value.title + "</strong></p><p><strong>" + value.date +"</strong></p></li>";
 				
-			listHtml += "<li><a href='#' onclick=window.open('" + value.link + "','_blank','location=yes,toolbar=yes,allowInlineMediaPlayback=yes')><img class='ui-circle ui-mini ui-padding' src='"+ value.image +"'><h2>" + value.name +  "</h2><p><strong>"+ value.title + "</strong></p><p><strong>" + value.date +"</strong></p></a><a href='#' onclick=window.open('http://www.stat8.net','_blank','location=yes,toolbar=yes')></a></li>";
+			listHtml += "<li><a href='#' onclick=window.open('" + value.link + "','_blank','location=yes,toolbar=yes,allowInlineMediaPlayback=yes')><img class='ui-circle ui-mini ui-padding' src='"+ value.image +"'><h2>" + value.name +  "</h2><p><strong>"+ value.title + "</strong></p><p><strong>" + value.date +"</strong></p></a><a href='#' onclick=window.open('http://www.stat8.net','_system')></a></li>";
 				
 				
 			//this works for inappbrowser 	listHtml += "<li><a href='#' onclick=window.open('" + value.link + "','_blank','location=yes,toolbar=yes,allowInlineMediaPlayback=yes')><img class='ui-circle ui-mini ui-padding' src='"+ value.image +"'><h2>" + value.name +  "</h2><p><strong>"+ value.title + "</strong></p><p><strong>" + value.date +"</strong></p></li>";

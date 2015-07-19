@@ -4,7 +4,7 @@ app.controller('MainController', ['$scope', 'ryp', function($scope, ryp) {
     
     $scope.openLink = function(infoLink){
 	  
-	  window.open(infoLink,'_blank','location=yes,toolbar=no,allowInlineMediaPlayback=yes')
+	  window.open(infoLink,'_blank','location=no,toolbar=yes,allowInlineMediaPlayback=yes')
 	  
     
   };
